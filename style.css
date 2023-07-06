@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: rgb(70, 118, 177);
+    color: rgb(58, 58, 187);
+}
+
+h1 {
+    font-size: 35px;
+    margin-top: 8px;
+}
+h2 {
+    margin-bottom: 16px;
+    font-size: 24px;
+}
+
+p {
+    margin-bottom: 16px;
+}
+
+.container {
+    max-width: 540px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: rgb(197, 197, 112);
+    text-align: center;
+    padding: 32px;
+}
+
+.guess {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+input {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: large;
+}
+
+.btn {
+    height: 112px;
+    width: 112px;
+    margin-top: 12px;
+    background-color:rgb(70, 118, 177);
+    border-radius: 50%;
+    border:  2px solid rgb(52, 191, 82);
+    cursor: pointer;
+    color: rgb(215, 215, 47);
+}
+
+/* CHARACTER */
+
+.character {
+    height: 112px;
+    width: 112px;
+    background-color:rgb(70, 118, 177);
+    border-radius: 50%;
+    border:  2px solid rgb(52, 191, 82);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.character img {
+    max-width: 100%;
+}
+
+.characters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 40px 4px;
+}
+
+/* LOADING */
+
+.loading {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    viewport-fit: 100%;
+    background-color: rgba(27, 144, 105, 0.81);
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading img {
+    width: 100px;
+}
+
+.loading-hidden {
+    display: none;
+}
+
+/* MODAL */
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    viewport-fit: 100%;
+    background-color: rgba(27, 144, 105, 0.81);
+}
+
+.modal-box {
+    background-color: white;
+    padding: 20px;
+    border: 2px solid blueviolet;
+    max-width: 512px;
+    margin: 24px auto;
+    position: relative;
+}
+
+.modal-close {
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    border: 2px solid;
+    display: flex;
+    cursor:pointer;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}
+.modal-hidden {
+    display: none;
+}
+
+/* prompt risposta */
+
+.risposta {
+    margin-bottom: 10%;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote from a Bot</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Indovina Chi</h1>
+        <p>In base alla risposta, vedi <br> se riesci a indovinare il personaggio</p>
+    </header>
+
+    <section class="guess">
+        
+        <input type="button" value="Click Me" class="btn">
+        
+    </section>
+
+    <main>
+        <div class="container">
+            <div id="characters" class="characters">
+                <div class="character" data-character="Ash Ketchum">
+                    <img src="./images/ash-ketchum.png" />
+                </div>
+                
+                <div class="character" data-character="Batman">
+                    <img src="./images/batman.png" />
+                </div>
+                <div class="character" data-character="Homer Simpson">
+                    <img src="./images/homer-simpson.png" />
+                </div>
+                <div class="character" data-character="Hermione Granger">
+                    <img src="./images/hermione-granger.png" />
+                </div>
+                <div class="character" data-character="Gandalf">
+                    <img src="./images/gandalf.png" />
+                </div>
+                <div class="character" data-character="Harley Quinn">
+                    <img src="./images/harley-quinn.png" />
+                </div>
+                <div class="character" data-character="Shrek">
+                    <img src="./images/shrek.png" />
+                </div>
+                <div class="character" data-character="Barbie">
+                    <img src="./images/barbie.png" />
+                </div>
+                <div class="character" data-character="Minion">
+                    <img src="./images/minion.png" />
+                </div>
+            </div>
+        </div>
+        <div class="loading loading-hidden">
+            <img src="./images/loader.gif" alt="">
+        </div>
+        <div class="modal modal-hidden">
+            <div class="modal-box">
+                <div class="modal-close">
+                    <img src="./images/close.svg" alt="close button">
+                </div>
+                <div class="modal-content">
+                    <h2>Homer Simpson</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio nulla laboriosam numquam? Odio ex eaque aliquam porro! Atque porro cumque quae praesentium. Neque consequatur veniam deserunt ad atque distinctio corporis.</p>
+                    <code>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, repellat.</code>
+                </div>
+            </div>
+        </div>
+    </main>
+
+<!-- Risposta da prompt ancora da ultimare -->
+
+        <!-- <section class="no-name">
+            <input type="button" value="test">
+            <input type="checkbox">
+            <input class="risposta" type="text" value="" required>
+        </section> -->
+
+    <script src="main.js"></script>
+</body>
+</html>
